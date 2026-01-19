@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Create payment without credentials (expected error)",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "customerName": "Test User",
+        "customerEmail": "test@example.com",
+        "items": [{"productId": 1, "quantity": 1, "price": 1000, "name": "Test Product"}],
+        "totalAmount": 1000
+      },
+      "expectedStatus": 500,
+      "bodyMatcher": "partial"
+    }
+  ]
+}

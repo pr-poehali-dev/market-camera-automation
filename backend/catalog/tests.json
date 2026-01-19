@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "name": "Get catalog without filters",
+      "method": "GET",
+      "path": "/?page=1&limit=10",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "products": "array",
+        "total": "number",
+        "page": 1
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

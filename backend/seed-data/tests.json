@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "name": "Seed database with products and services",
+      "method": "POST",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "products": "number",
+        "services": "number"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "name": "Get services list",
+      "method": "GET",
+      "path": "/?page=1&limit=20",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "services": "array",
+        "total": "number"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

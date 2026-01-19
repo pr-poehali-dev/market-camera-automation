@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "name": "Get catalog metadata",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "categories": "array",
+        "brands": "array",
+        "priceRange": "object"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
